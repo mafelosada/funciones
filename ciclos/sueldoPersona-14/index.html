@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario de una persona</title>
+    <script src="js/pago.js"></script>
+</head>
+<body>
+    <script>
+
+        let dias=24;
+        let valorDia=150000;
+        let totalSalario=salario(dias, valorDia);
+        let totalSalud=salud(dias, valorDia);
+        let totalPension=pension(dias, valorDia);
+        let totalArl=arl(dias, valorDia);
+        let totalTransporte=subTrans(dias, valorDia);
+        let reten= retencion(dias, valorDia);
+        let pago=pagoTotal(dias, valorDia);
+
+
+        console.log("Salario = " + (totalSalario));
+        console.log("Salud  = " + (totalSalud));
+        console.log("Pension = " + (totalPension));
+        console.log("Arl  = " + (totalArl));
+        console.log("Pago Total de transporte  = " + (totalTransporte));
+        console.log("Retencion  = " + (reten));
+        console.log("PAGO TOTAL  = " + (pago));
+
+        console.log("-----")
+
+        
+        let adias=24;
+        let avalorDia=80000;
+        let atotalSalario=salarios(adias, avalorDia);
+        let atotalSalud=salud1(adias, avalorDia);
+        let atotalPension=pension1(adias, avalorDia);
+        let atotalArl=arl1(adias, avalorDia);
+        let atotalTransporte=subsidioTrans(adias, avalorDia);
+        let areten= retenciones(adias, avalorDia);
+        let apago=totalPago(adias, avalorDia);
+
+
+        console.log("Salario = " + (atotalSalario));
+        console.log("Salud  = " + (atotalSalud));
+        console.log("Pension = " + (atotalPension));
+        console.log("Arl  = " + (atotalArl));
+        console.log("Pago Total de transporte  = " + (atotalTransporte));
+        console.log("Retencion  = " + (areten));
+        console.log("PAGO TOTAL  = " + (apago));
+
+    </script>
+    
+</body>
+</html>
+
+
+
